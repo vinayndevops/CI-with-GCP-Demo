@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-       PROJECT_ID = 'DevOps'
+       PROJECT_ID = 'devops-260921'
        CLUSTER_NAME = 'k8s-cluster'
        LOCATION = 'us-east1-b'
        CREDENTIALS_ID = 'k8sengine'
