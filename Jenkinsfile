@@ -4,7 +4,7 @@ pipeline {
        PROJECT_ID = 'DevOps'
        CLUSTER_NAME = 'k8s-cluster'
        LOCATION = 'us-east1-b'
-       CREDENTIALS_ID = 'DevOps'
+       CREDENTIALS_ID = 'k8sengine'
     } 	
        stages {
         stage('Checkout SCM') {
