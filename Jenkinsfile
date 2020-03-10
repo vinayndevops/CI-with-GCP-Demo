@@ -28,7 +28,8 @@ pipeline {
             steps {
                 script {
 		   appimage = docker.build("vinaydevops/devops:${env.BUILD_ID}")
-                   docker.withRegistry('https://registry.hub.docker.com','dockerhub'){
+                  //docker.withRegistry('https://registry.hub.docker.com','dockerhub'){
+                   docker.withRegistry('https://gcr.io','gcr:gcr_cred'){
                      appimage.push()
 		   }
 		}
