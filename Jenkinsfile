@@ -27,7 +27,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-		   appimage = docker.build("devops/devops:${env.BUILD_ID}")
+		   appimage = docker.build("gcr.io/DevOps/vinzdevops/devops:${env.BUILD_ID}")
                   //docker.withRegistry('https://registry.hub.docker.com','dockerhub'){
                    docker.withRegistry('https://gcr.io','gcr:gcr_cred'){
                      appimage.push()
