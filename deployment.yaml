@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: gcr.io/DevOps/vinzdevops/devops:tagversion
+        image: gcr.io/devops-260921/vinzdevops/devops:tagversion
         ports:
         - containerPort: 8080
 
